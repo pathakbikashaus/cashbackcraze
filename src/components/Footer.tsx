@@ -6,10 +6,10 @@ const Footer = () => {
   return (
     <footer className="bg-primary-blue text-white p-6 mt-8 shadow-inner">
       <div className="container mx-auto text-center">
-        {/* Google AdSense Placeholder */}
-        <div className="bg-gray-800 text-gray-400 p-4 mb-6 rounded-lg">
-          <p className="text-sm">Google AdSense Placeholder</p>
-          <p className="text-xs">Ad will be displayed here</p>
+        {/* Leaderboard Ad Placeholder */}
+        <div className="w-full bg-gray-800 text-gray-400 p-4 mb-6 rounded-lg flex items-center justify-center" style={{ minHeight: '90px' }}>
+          <p className="text-sm">Leaderboard Ad (728x90)</p>
+          <p className="text-xs mt-1">Ad will be displayed here</p>
         </div>
 
         <p className="text-sm mb-4">
