@@ -7,7 +7,7 @@ import { Label } from '@/components/ui/label';
 const Contact = () => {
   return (
     <div className="min-h-screen py-8">
-      <h1 className="text-4xl font-bold text-electric-blue mb-6 text-center">Contact Us</h1>
+      <h1 className="text-4xl font-bold text-primary-blue mb-6 text-center">Contact Us</h1>
       <p className="text-lg text-gray-700 text-center max-w-2xl mx-auto mb-8">
         Have a question, suggestion, or a deal to share? We'd love to hear from you!
       </p>
@@ -25,7 +25,7 @@ const Contact = () => {
             <Label htmlFor="message" className="text-lg">Message</Label>
             <Textarea id="message" placeholder="Your message here..." rows={5} className="mt-2 p-3 border rounded-md w-full"></Textarea>
           </div>
-          <Button type="submit" className="w-full bg-neon-green text-white text-lg py-3 rounded-md hover:bg-green-700 transition-colors">
+          <Button type="submit" className="w-full bg-accent-green text-white text-lg py-3 rounded-md hover:bg-green-700 transition-colors">
             Send Message
           </Button>
         </form>

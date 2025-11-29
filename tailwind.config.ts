@@ -62,10 +62,10 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Custom CashbackCraze colors
-        'electric-blue': '#007BFF',
-        'neon-green': '#28A745',
-        'gold-accent': '#FFD700',
+        // Updated CashbackCraze colors for a more modern, materialistic look
+        'primary-blue': '#2563EB', // A vibrant, modern blue
+        'accent-green': '#16A34A', // A fresh, appealing green
+        'highlight-yellow': '#FACC15', // A warm, inviting yellow
       },
       borderRadius: {
         lg: "var(--radius)",
