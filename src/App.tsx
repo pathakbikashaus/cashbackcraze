@@ -5,16 +5,16 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import Layout from "./components/Layout"; // Import the new Layout component
+import Layout from "./components/Layout";
 import Coupons from "./pages/Coupons";
 import Deals from "./pages/Deals";
 import Referrals from "./pages/Referrals";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import { createClient } from './integrations/supabase/client'; // Import Supabase client
+import { supabase } from './integrations/supabase/client'; // Correctly import the supabase client instance
 
 const queryClient = new QueryClient();
-const supabase = createClient(); // Initialize Supabase client
+// const supabase = createClient(); // This line is no longer needed as supabase is imported directly
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -22,7 +22,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Layout> {/* Wrap all routes with the Layout component */}
+        <Layout>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/coupons" element={<Coupons />} />
