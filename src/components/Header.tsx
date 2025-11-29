@@ -1,14 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import Logo from './Logo'; // Import the new Logo component
 
 const Header = () => {
   return (
     <header className="bg-primary-blue text-white p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold text-highlight-yellow">
-          CashbackCraze
-        </Link>
+        <Logo /> {/* Using the new Logo component */}
         <nav className="hidden md:flex space-x-6">
           <Link to="/" className="hover:text-highlight-yellow transition-colors">Home</Link>
           <Link to="/coupons" className="hover:text-highlight-yellow transition-colors">Coupons</Link>
