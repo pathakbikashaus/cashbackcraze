@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Added this import
 import { MadeWithDyad } from './made-with-dyad';
 
 const Footer = () => {
